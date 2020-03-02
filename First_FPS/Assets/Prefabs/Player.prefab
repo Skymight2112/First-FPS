@@ -436,7 +436,7 @@ MonoBehaviour:
   - {fileID: 5390581366854152512}
   - {fileID: 5390581366854155967}
   - {fileID: 5390581366080990550}
-  - {fileID: 5390581366080990549}
+  - {fileID: -7241859885594872417}
 --- !u!114 &-8997983428834055999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,7 +470,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 1, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -563,14 +563,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5390581366854155964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69c4439968f1c3242808d4eb415053da, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e979f1f95e53004b831181ef95fe75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 0}
-  cam: {fileID: 0}
-  mask:
-    serializedVersion: 2
-    m_Bits: 0
+  name: Glock
+  damage: 10
+  range: 100
+  FpsCam: {fileID: 5390581366080990550}
 --- !u!1 &5390581367488766039
 GameObject:
   m_ObjectHideFlags: 0
