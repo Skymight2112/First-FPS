@@ -302,7 +302,9 @@ GameObject:
   - component: {fileID: 6538280976109130742}
   - component: {fileID: -8997983428834055999}
   - component: {fileID: 3642662355362989525}
-  - component: {fileID: -7241859885594872417}
+  - component: {fileID: 4810723417698106883}
+  - component: {fileID: 4608399572031172379}
+  - component: {fileID: 7491612307270990522}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -436,7 +438,8 @@ MonoBehaviour:
   - {fileID: 5390581366854152512}
   - {fileID: 5390581366854155967}
   - {fileID: 5390581366080990550}
-  - {fileID: -7241859885594872417}
+  - {fileID: 4608399572031172379}
+  remoteLayerName: RemotePlayer
 --- !u!114 &-8997983428834055999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +557,33 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &-7241859885594872417
+--- !u!114 &4810723417698106883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5390581366854155964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db81fa01abd623d4e96fdcc6a8e31004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4608399572031172379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5390581366854155964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4108e53cbd2557741b64e1ad6f407115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FpsCam: {fileID: 5390581366080990550}
+  weapon: {fileID: 7491612307270990522}
+--- !u!114 &7491612307270990522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -569,7 +598,6 @@ MonoBehaviour:
   name: Glock
   damage: 10
   range: 100
-  FpsCam: {fileID: 5390581366080990550}
 --- !u!1 &5390581367488766039
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +607,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5390581367488766040}
+  - component: {fileID: 2861402864731731575}
+  - component: {fileID: 6703053205357196248}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -603,6 +633,35 @@ Transform:
   m_Father: {fileID: 5390581366080990548}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2861402864731731575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5390581367488766039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4108e53cbd2557741b64e1ad6f407115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FpsCam: {fileID: 5390581366080990550}
+  weapon: {fileID: 6703053205357196248}
+--- !u!114 &6703053205357196248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5390581367488766039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e979f1f95e53004b831181ef95fe75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Glock
+  damage: 10
+  range: 100
 --- !u!1 &5390581367564900238
 GameObject:
   m_ObjectHideFlags: 0
